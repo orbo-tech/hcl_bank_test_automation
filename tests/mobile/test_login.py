@@ -12,13 +12,23 @@ def test_successful_login():
 
 @given('User is on the login page')
 def user_is_on_the_login_page():
-    print("Given: User is on the login page")
+    lets_sign_you_in_text = WebDriverWait(driver, 30).until(
+        EC.visibility_of_element_located((MobileBy.XPATH, "//*[contains(@text, 'Let\'s sign you in')]")))
+
+    assert lets_sign_you_in_text, "Could not find 'Let's sign you in' text on the page."
 
 
 @when('User enters valid username and password')
 def user_enters_valid_username_and_password():
-    print("When: User enters valid username and password")
+    # Locate the username input field and send keys
+    username_input = WebDriverWait(driver, 30).until(
+        EC.element_to_be_clickable((MobileBy.ID, "username_field")))
+    username_input.send_keys("valid_username")
 
+    # Locate the password input field and send keys
+    password_input = WebDriverWait(driver, 30).until(
+        EC.element_to_be_clickable((MobileBy.ID, "password_field")))
+    password_input.send_keys("valid_password")
 
 @when('User swipe down and clicks the login button')
 def user_swipes_and_and_clicks_the_login_button():
