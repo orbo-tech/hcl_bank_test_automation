@@ -6,6 +6,7 @@ data = get_json_value("../../test_data/credentials.json", "credentials")
 
 @scenario("../features/login.feature", "Successful Login")
 def test_successful_login():
+    """ Verify successful login scenario."""
     pass
 
 
