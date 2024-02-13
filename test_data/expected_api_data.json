@@ -1,0 +1,12 @@
+{"expected_data": [
+    {"id": 1234567, "name": "John Wick", "email": "9johnwick@marvel.com", "gender": "male", "status": "inactive"},
+    {"id": 6341356, "name": "Archan Embranthiri", "email": "embranthiri_archan@reynolds.test", "gender": "male", "status": "inactive"},
+    {"id": 6341351, "name": "Fr. Bhoj Menon", "email": "menon_fr_bhoj@blanda.test", "gender": "female", "status": "active"},
+    {"id": 6341348, "name": "Sanka Achari CPA", "email": "achari_cpa_sanka@borer.example", "gender": "male", "status": "active"},
+    {"id": 6341347, "name": "Prof. Vrinda Desai", "email": "vrinda_desai_prof@boyle.example", "gender": "male", "status": "inactive"},
+    {"id": 6341345, "name": "Niro Guha I", "email": "i_guha_niro@hettinger.example", "gender": "female", "status": "active"},
+    {"id": 6341344, "name": "Amb. Sarla Kaniyar", "email": "sarla_amb_kaniyar@bayer.test", "gender": "male", "status": "active"},
+    {"id": 6341343, "name": "Geetanjali Bhattacharya", "email": "bhattacharya_geetanjali@konopelski.test", "gender": "male", "status": "active"},
+    {"id": 6341342, "name": "Param Mukhopadhyay", "email": "mukhopadhyay_param@hamill.example", "gender": "female", "status": "active"},
+    {"id": 6341341, "name": "Niro Jain", "email": "jain_niro@boyle.example", "gender": "male", "status": "inactive"}
+]}
