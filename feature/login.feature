@@ -1,15 +1,22 @@
 Feature: Login Functionality
 
   Scenario: Successful Login
-    Given the user is on the login page
-    When the user enters valid username and password
-    And clicks the login button
-    Then the user should be redirected to the dashboard
-    And should see a welcome message
+    Given User is on the login page
+    When User enters valid username and password
+    And User swipe down and clicks the login button
+    Then User should be redirected to the dashboard
+    And User should see Get started message
 
-  Scenario: Failed Login - Invalid Username
-    Given the user is on the login page
-    When the user enters invalid username and valid password
-    And clicks the login button
-    Then the user should see an error message indicating invalid username
-    And should remain on the login page
+  Scenario: Unsuccessful Login - Empty Username
+    Given User is on the login page
+    When User enters empty username and valid password
+    And User swipe down and clicks the login button
+    Then User should see an error message indicating empty username
+    And User should remain on the login page
+  
+  Scenario: Unsuccessful Login - Invalid Username
+    Given User is on the login page
+    When User enters invalid username and valid password
+    And User swipe down and clicks the login button
+    Then User should see an error message indicating invalid username
+    And User should remain on the login page
