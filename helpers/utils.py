@@ -1,7 +1,7 @@
 import json
 
 
-def get_json_value(file_path, key) -> list:
+def get_json_value(file_path, key):
     """
     Read a JSON file and get the value associated with the provided key.
 

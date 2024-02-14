@@ -3,7 +3,7 @@ from random import random
 import pytest
 import requests
 
-from utils.file import get_json_value
+from helpers.utils import get_json_value
 
 expected_data_list = get_json_value("../../test_data/expected_api_data.json", "expected_data")
 
@@ -77,10 +77,10 @@ def test_parse_nested_json(base_url, get_auth_token):
 
     # To verify all item from response using loop.
     for actual_data in actual_data_list:
-        actual_data["name"] == expected_data_list[0]["name"]
-        actual_data["email"] == expected_data_list[0]["email"]
-        actual_data["gender"] == expected_data_list[0]["gender"]
-        actual_data["status"] == expected_data_list[0]["status"]
+        assert actual_data["name"] == expected_data_list[0]["name"]
+        assert actual_data["email"] == expected_data_list[0]["email"]
+        assert actual_data["gender"] == expected_data_list[0]["gender"]
+        assert actual_data["status"] == expected_data_list[0]["status"]
 
 
 @pytest.mark.api
