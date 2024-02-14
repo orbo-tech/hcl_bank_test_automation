@@ -2,14 +2,13 @@ import time
 import pytest
 from pytest_bdd import scenario, given, when, then
 
-from helpers.appium_driver import swipe_to_element_by_accessibility_id, find_element_by_accessibility_id
+from helpers.appium_driver import find_element_by_accessibility_id, swipe_to_element_by_accessibility_id
 from helpers.utils import get_json_value
 
 
-credentials = get_json_value("../../test_credentials/credentials.json", "test_users")
+credentials = get_json_value("../../test_credentials/credentials.json", "test_user1")
 
 
-@pytest.mark.xfail
 @pytest.mark.mobile
 @scenario("../../feature/login.feature", "Successful Login")
 def test_successful_login(appium_driver):
@@ -21,7 +20,6 @@ def test_successful_login(appium_driver):
     """
 
 
-@pytest.mark.xfail
 @pytest.mark.mobile
 @scenario("../../feature/login.feature", 'Unsuccessful Login - Empty credentials')
 def test_unsuccessful_login_empty_credentials():
@@ -32,6 +30,7 @@ def test_unsuccessful_login_empty_credentials():
         Parameters:
         - appium_driver: Appium WebDriver instance.
     """
+
 
 @given('User is on the login page')
 def user_is_on_the_login_page():

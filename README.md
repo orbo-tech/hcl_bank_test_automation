@@ -33,6 +33,13 @@ providing flexibility and scalability for testing.
   - Test cases can be selectively executed using pytest markers.
   - Markers include `@mobile`, `@api`, etc.
 
+## Example Test Report
+![img.png](img.png)
+
+## Example Test Run Video
+[bs_test_run.mp4](..%2F..%2FDownloads%2Fbs_test_run.mp4)
+
+
 ## How to Run
 
 ### Local Execution:
