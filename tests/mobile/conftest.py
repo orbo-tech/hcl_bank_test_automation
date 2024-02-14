@@ -11,27 +11,29 @@ credentials = get_json_value("../../test_credentials/credentials.json", "browser
 @pytest.fixture
 def appium_driver(request):
     """
-    Fixture to set up and tear down the Appium driver.
+    Fixture to set up Appium driver. 
+    Note: iOS driver config yet to be added.
     """
 
     android_options = UiAutomator2Options().load_capabilities({
-        # Set URL of the application under test
+        # To Set URL of the application uploaded in cloud platform
         "app": credentials["app_id"],
 
-        # Specify device and os_version for testing
+        # To Specify device and os_version for testing
         "deviceName": "google pixel 3a",
         "platformName": "android",
         "platformVersion": "9.0",
 
-        # Set other BrowserStack capabilities
+        # To Set other BrowserStack capabilities
         "bstack:options": {
             "userName": credentials["username"],
             "accessKey": credentials["access_key"],
-            "projectName": "TenantEv",
+            "projectName": "HCL Bank",
             "buildName": "hcl-android-build-1",
             "sessionName": "BrowserStack Test:1"
         }
     })
     driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=android_options)
     return driver
+    
 
