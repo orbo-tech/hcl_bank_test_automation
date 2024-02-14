@@ -11,7 +11,7 @@ credentials = get_json_value("../../test_credentials/credentials.json", "test_us
 
 @pytest.mark.mobile
 @scenario("../../feature/login.feature", "Successful Login")
-def test_successful_login(appium_driver):
+def test_successful_login():
     """
     Test for the Successful Login scenario.
 
@@ -78,9 +78,9 @@ def user_enters_empty_username_and_password(appium_driver):
 def user_should_remain_on_the_login_page(appium_driver):
     # User shouldn't see Welcome message
     # Get the text from the element to assert
-    element = find_element_by_accessibility_id(appium_driver, "Welcome Banking")
+    element = find_element_by_accessibility_id(appium_driver, "Welcome to Banking")
     element_text = element.text
     assert "Login" == element_text, "Could not find 'Login' text on the page."
 
     # This assertion should fail as login expected to be unsuccessful.
-    assert "Welcome" == element_text, "Could not find 'Welcome' text on the page."
+    assert "Welcome to Banking" == element_text, "Could not find 'Welcome' text on the page."
