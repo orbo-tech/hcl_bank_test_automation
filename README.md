@@ -37,8 +37,7 @@ providing flexibility and scalability for testing.
 ![img.png](img.png)
 
 ## Example Test Run GIF
-![bs_test_run (1).gif](..%2F..%2FDownloads%2Fbs_test_run%20%281%29.gif)
-
+![bs_test_run (1).gif](bs_test_run%20%281%29.gif)
 
 ## How to Run
 
