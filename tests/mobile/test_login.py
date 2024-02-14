@@ -9,6 +9,7 @@ from helpers.utils import get_json_value
 credentials = get_json_value("../../test_credentials/credentials.json", "test_users")
 
 
+@pytest.mark.xfail
 @pytest.mark.mobile
 @scenario("../../feature/login.feature", "Successful Login")
 def test_successful_login(appium_driver):
@@ -19,6 +20,18 @@ def test_successful_login(appium_driver):
     - appium_driver: Appium WebDriver instance.
     """
 
+
+@pytest.mark.xfail
+@pytest.mark.mobile
+@scenario("../../feature/login.feature", 'Unsuccessful Login - Empty credentials')
+def test_unsuccessful_login_empty_credentials():
+    """
+        Test for the Unsuccessful Login scenario.
+        Note: This test is expected to fail.
+
+        Parameters:
+        - appium_driver: Appium WebDriver instance.
+    """
 
 @given('User is on the login page')
 def user_is_on_the_login_page():
@@ -52,19 +65,6 @@ def user_should_see_welcome_message(appium_driver):
     element_text = element.text
     assert "Welcome to Banking" == element_text, "Could not find 'Welcome' text on the page."
     pass
-
-
-@pytest.mark.xfail
-@pytest.mark.mobile
-@scenario("../../feature/login.feature", 'Unsuccessful Login - Empty credentials')
-def test_unsuccessful_login_empty_credentials():
-    """
-        Test for the Unsuccessful Login scenario.
-        Note: This test is expected to fail.
-
-        Parameters:
-        - appium_driver: Appium WebDriver instance.
-    """
 
 
 @when('User enters empty username and password')

@@ -5,7 +5,7 @@ from appium.options.android import UiAutomator2Options
 from helpers.utils import get_json_value
 
 
-credentials = get_json_value("../../test_credentials/credentials.json", "browserstack")
+credentials = get_json_value("../test_credentials/credentials.json", "browserstack")
 
 
 @pytest.fixture
