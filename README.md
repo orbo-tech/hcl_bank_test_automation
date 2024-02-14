@@ -2,7 +2,7 @@
 
 ## Author
 
-**Your Full Name**
+**RAJKUMAR VEERAMANI**
 - GitHub: https://github.com/orbo-tech/hcl_bank_test_automation
 
 
@@ -32,6 +32,11 @@ providing flexibility and scalability for testing.
 - **Run by Marker:**
   - Test cases can be selectively executed using pytest markers.
   - Markers include `@mobile`, `@api`, etc.
+
+- **CI/CD**:
+  - Implemented CI/CD practices for automated testing and deployment.
+  - Ensures seamless integration and deployment of code changes.
+  - Utilizes GitHub Actions for continuous integration and deployment workflows.
 
 ## Example Test Report
 ![img.png](img.png)
