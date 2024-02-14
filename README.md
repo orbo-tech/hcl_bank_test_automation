@@ -1,5 +1,11 @@
 # Sample HCL Bank Test Automation
 
+## Author
+
+**Your Full Name**
+- GitHub: https://github.com/orbo-tech/hcl_bank_test_automation
+
+
 ## About the Project
 
 This project is a comprehensive pytest test automation suite for a sample HCL Bank, 
@@ -72,13 +78,5 @@ providing flexibility and scalability for testing.
 
 - **Documentation:**
   - Code includes comments, docstrings, and a comprehensive `README.md` for clarity.
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues, submit pull requests, or provide feedback.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **Note: This project is specifically designed for cloud platforms like AWS Device Farm and BrowserStack and is not intended to run on a local Appium server.**
