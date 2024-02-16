@@ -41,8 +41,9 @@ providing flexibility and scalability for testing.
 ## Example Test Report
 ![img.png](img.png)
 
-## Example Test Run GIF
+## Example Test Run
 ![bs_test_run (1).gif](bs_test_run%20%281%29.gif)
+Please Find "Browserstack_test_run.mp4" in project root.
 
 ## How to Run
 
