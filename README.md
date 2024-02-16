@@ -43,7 +43,7 @@ providing flexibility and scalability for testing.
 
 ## Example Test Run
 ![bs_test_run.gif](..%2F..%2FDownloads%2Fbs_test_run.gif)
-Please Find "Browserstack_test_run.mp4" in project root.
+Please find complete video in "Browserstack_test_run.mp4" in project root.
 
 ## How to Run
 
