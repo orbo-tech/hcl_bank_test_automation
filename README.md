@@ -42,7 +42,8 @@ providing flexibility and scalability for testing.
 ![img.png](img.png)
 
 ## Example Test Run
-![bs_test_run.gif](..%2F..%2FDownloads%2Fbs_test_run.gif)
+![bs_test_run (1)](https://github.com/orbo-tech/hcl_bank_test_automation/assets/159821000/6f5515cf-9e33-4f76-984f-c6f4ae54d6e7)
+
 Please find complete video in "Browserstack_test_run.mp4" in project root.
 
 ## How to Run
