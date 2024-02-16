@@ -42,7 +42,7 @@ providing flexibility and scalability for testing.
 ![img.png](img.png)
 
 ## Example Test Run
-![bs_test_run (1).gif](bs_test_run%20%281%29.gif)
+![bs_test_run.gif](..%2F..%2FDownloads%2Fbs_test_run.gif)
 Please Find "Browserstack_test_run.mp4" in project root.
 
 ## How to Run
